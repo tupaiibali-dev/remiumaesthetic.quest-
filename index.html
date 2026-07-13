@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Aesthetic</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: radial-gradient(circle at 50% 40%, #1a1520 0%, #0a080d 80%);
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            overflow: hidden;
+            position: relative;
+        }
+        /* Эффект мягкого премиального свечения шелка на фоне */
+        body::before {
+            content: "";
+            position: absolute;
+            width: 140%;
+            height: 140%;
+            background-image: radial-gradient(rgba(212, 175, 55, 0.08) 0%, transparent 50%);
+            top: -10%;
+            left: -20%;
+            animation: drift 12s infinite alternate ease-in-out;
+            z-index: 1;
+        }
+        @keyframes drift {
+            0% { transform: translate(0, 0) scale(1); }
+            100% { transform: translate(5%, 5%) scale(1.1); }
+        }
+        .container {
+            text-align: center;
+            z-index: 2;
+            padding: 24px;
+            width: 100%;
+            max-width: 400px;
+        }
+        .logo-area {
+            margin-bottom: 45px;
+        }
+        .logo-text {
+            font-size: 24px;
+            font-weight: 300;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            background: linear-gradient(135deg, #fff 30%, #d4af37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 40px rgba(212, 175, 55, 0.1);
+        }
+        .btn {
+            display: inline-block;
+            width: 100%;
+            padding: 16px 30px;
+            font-size: 15px;
+            font-weight: 500;
+            color: #1a1520;
+            text-decoration: none;
+            background: linear-gradient(90deg, #f3e5ab 0%, #d4af37 100%);
+            border-radius: 4px;
+            box-shadow: 0 15px 35px rgba(214, 175, 55, 0.15);
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .btn:active {
+            transform: scale(0.98);
+            box-shadow: 0 5px 15px rgba(214, 175, 55, 0.15);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="logo-area">
+            <div class="logo-text">Premium Aesthetic</div>
+        </div>
+        <!-- Название кнопки: ENTER CLUB (строгий лакшери стиль) -->
+        <a href="https://t.me/+09H3RIdfGkIzMmUy" class="btn">ENTER CLUB</a>
+    </div>
+
+</body>
+</html>
